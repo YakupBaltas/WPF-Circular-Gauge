@@ -162,7 +162,7 @@ DAMAGE.-->
 
                         <!--Glass effect ellipse-->
                         <Path x:Name="GlassEffect" StrokeThickness="1" Stretch="Fill" VerticalAlignment="Bottom"
-                              Height="{TemplateBinding Radius}"
+                              Height="{TemplateBinding Radius}"  Visibility="{TemplateBinding GlassEffectVisibility}"
                               Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Radius, Converter={StaticResource glassEffectWidthConverter}}" 
                               Opacity="0.18" Data="M265.99997,151.00005 C263.99994,194.00003 209.55908,259 135.00064,259 C60.442207,259 11,200.00003 5.9999995,157.00005 C5.0181994,148.55656 73.000877,112.00006 137.00053,112.00007 C199.00887,112.00008 266.72015,135.5164 265.99997,151.00005 z">
                             <Path.Fill>

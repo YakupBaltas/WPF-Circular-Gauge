@@ -348,6 +348,15 @@ namespace CircularGauge
             DependencyProperty.Register("RangeIndicatorLightRadius", typeof(double), typeof(CircularGaugeControl), null);
 
 
+        /// <summary>
+        /// Dependency property to Get/Set the Glass Effect Visibility
+        /// </summary>
+
+        public static readonly DependencyProperty GlassEffectVisibilityProperty =
+            DependencyProperty.Register("GlassEffectVisibility", typeof(Visibility), typeof(CircularGaugeControl), null);
+
+        
+
         #endregion
 
         #region Wrapper properties
@@ -943,6 +952,21 @@ namespace CircularGauge
             }
         }
 
+        /// <summary>
+        /// Gets/Sets Glass Effect Visibility
+        /// </summary>
+        public Visibility GlassEffectVisibility
+        {
+            get
+            {
+                return (Visibility)GetValue(GlassEffectVisibilityProperty);
+            }
+            set
+            {
+                SetValue(GlassEffectVisibilityProperty, value);
+            }
+        }
+        
         #endregion
 
         #region Constructor
